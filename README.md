@@ -52,6 +52,7 @@ $ cd rails_auth_app
 $ rails server
 
 # http://localhost:3000/ にアクセスし、初期画面が表示されればOK
+/Users/shirasawafumi/Desktop/スクリーンショット 2024-05-02 16.50.47.png
 
 ```
 
