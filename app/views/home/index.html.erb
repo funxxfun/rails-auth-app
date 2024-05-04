@@ -1,2 +1,5 @@
-<h1>Home#index</h1>
+<h1>Home</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
+<%= button_to 'Logout', 'auth/logout', method: :get, data: { turbo: false } %>
