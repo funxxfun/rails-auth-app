@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  database: storage/production.sqlite3
+  # database: storage/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool:  <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: rails-auth-app
+  username: funxxfun
+  password: <%= ENV['DB_PASSWORD'] %> # .envで設定
